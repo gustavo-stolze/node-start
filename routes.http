@@ -1,0 +1,30 @@
+// CRUD IN ACTION!! ( CREATE, READ, UPDATE, DELETE )
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "video 01 node",
+    "description": "this is the first video",
+    "duration": "180"
+}
+
+###
+GET http://localhost:3333/videos
+###
+// query params
+GET http://localhost:3333/videos?search=node
+###
+
+PUT http://localhost:3333/videos/27240ab4-b8f4-4eb8-a3e2-ec6590e12b41
+Content-Type: application/json
+
+{
+    "title": "video 01 MODIFICADO",
+    "description": "this is the first video",
+    "duration": "180"
+}
+
+###
+
+DELETE http://localhost:3333/videos/1ceed85b-bde9-44e6-b5e2-9b37c5fc6eeb
